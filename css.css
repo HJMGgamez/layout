@@ -1,0 +1,128 @@
+#box {
+	display: grid;
+	grid-template-areas:
+	"header"
+	"content"
+	"aside"
+	"footer";
+}
+aside {
+    grid-area: aside;
+    background-color: lightgray;
+}
+
+main {
+	grid-area: main;
+    background-color: rgb(145, 255, 255);
+    padding: 8px;	
+}
+
+header {
+    grid-area: header;
+    background-color: rgba(0,0,0,0.8);    
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgba(0,0,0,0.8);  
+}
+@media only screen and (min-width: 500px)  {
+	#box {
+		grid-template-columns: 85% 15%;
+		grid-template-areas:
+	    	"header   header"
+	        "main aside"
+	        "footer   footer";
+	    }
+	}
+@media only screen and (min-width: 600px)   {
+        #box {
+            grid-template-columns:85% 15%;
+            grid-template-areas:
+      		"header  header"
+            "main aside"
+            "footer  footer";
+        }
+}
+body {
+	margin: 0px;
+}
+header ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+header li {
+    float: left;
+    border: 1px solid #bbb;
+}
+
+header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+header a:hover {
+    color: 	lightblue;
+    text-decoration: underline;
+    background-color: #111;
+}
+header a {
+	padding-left: 0px 25px;
+}
+#logo {
+	float: left;
+	height: 150px;
+	width: 150px;
+} 
+#title {
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+#title2 {
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+.right {
+	float: right;
+	height: 150px;
+	width: 290px;
+}
+.left {
+	float: left;
+	height: 150px;
+	width: 290px;
+}
+#box2 {
+	display: grid;
+	grid-gap: 10px;
+	grid-auto-columns: 49.6% 49.6%;
+	grid-auto-rows:250px 250px;
+}
+#article1 {
+	grid-column:1;
+	grid-row:1;
+	background-color: white;
+}
+#article2 {
+	grid-column:2;
+	grid-row:1;
+	background-color: white;
+}
+#article3 {
+	grid-column:1;
+	grid-row:2;
+	background-color: white;
+}
+#article4 {
+	grid-column:2;
+	grid-row:2;
+	background-color: white;
+}
