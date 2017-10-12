@@ -167,3 +167,15 @@ main article h2,h3,h2 {
 	grid-auto-columns: 49.6% 49.6%;
 	grid-auto-rows:300px 300px;
 }
+aside a img {
+	margin: 20px;
+	height: 195px;
+	width: 195px;
+}
+footer p {
+	color: white;
+	margin: 10px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+}
